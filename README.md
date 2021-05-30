@@ -1,5 +1,27 @@
 # hpc_lecture
 
+- 学籍番号: 21M30867
+- 氏名: Zhang Xinyu
+
+Final report:
+`/16_final_report/matmul.cpp`
+
+コンパイル・実行コマンド: \
+`mpicxx matmul.cpp -O3 -fopenmp -march=native` \
+`mpirun -np 4 ./a.out`
+
+OpenMP・SIMD・キャッシュブロッキングを加えた．
+
+ログインノード上で実行したときの出力の例:
+```
+N    : 1024
+comp : 0.007275 s
+comm : 0.008975 s
+total: 0.016250 s (132.156117 GFlops)
+error: 0.000102
+```
+
+
 |          | Topic                                | Sample code               |
 | -------- | ------------------------------------ | ------------------------- |
 | Class 1  | Introduction to parallel programming |                           |
